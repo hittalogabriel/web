@@ -1,0 +1,344 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #18181b;
+}
+
+nav {
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.nav-logo {
+    max-width: 100px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.link a {
+    position: relative;
+    padding-bottom: 0.75rem;
+    color: #fff;
+}
+
+.link a::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #1d4ed8;
+    transition: all 0.3s ease;
+}
+
+.link a:hover::after {
+    width: 70%;
+}
+
+.btn {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #1d4ed8;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #1e40af;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 5rem 2rem;
+}
+
+.blur {
+    position: absolute;
+    box-shadow: 0 0 1000px 50px #1d4ed8;
+    z-index: -100;
+}
+
+header {
+    position: relative;
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+header .content {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header .content h4 {
+    margin-bottom: 1rem;
+    color: #ccc;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+header .content h1 {
+    color: #fff;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 4rem;
+}
+
+header .content h1 span {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #fff;
+}
+
+header .content p {
+    margin-bottom: 2rem;
+    color: #ccc;
+}
+
+header .imagem {
+    position: relative;
+}
+
+header .imagem img {
+    max-width: 600px;
+    margin: auto;
+}
+
+section .header {
+    margin-bottom: 1rem;
+    color: #fff;
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight: 600;
+}
+
+.sub-header {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    color: #ccc;
+}
+
+.preco {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.preco .card {
+    padding: 3rem 2rem;
+    background-color: #27272a;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.preco .card:hover {
+    background-color: #323232;
+    border-color: #fff;
+}
+
+.preco .card .content {
+    flex: 1;
+    margin-bottom: 2rem;
+}
+
+.preco .card h4 {
+    margin-bottom: 1rem;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.preco .card h3 {
+    color: #fff;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+    border-bottom: 2px dashed #fff;
+}
+
+.preco .card p {
+    color: #fff;
+    margin-bottom: 0.75rem;
+}
+
+.preco .card p i {
+    color: #ccc;
+    font-size: 1.2rem;
+    margin-right: 0.3rem;
+}
+
+.preco .card button {
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+}
+
+.preco .card button:hover {
+    background-color: #1e40af;
+    border-color: #1e40af;
+}
+
+.copyright {
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+    color: #fff;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.cadastro {
+    border: 1px solid black;
+    width: 400px;
+    height: 500px;
+    background: url('imagens/arnold.jpg');
+    color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.75);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+form {
+    text-align: center;
+    display: flex;
+    box-sizing: border-box;
+    padding: 40px;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: brightness(40%);
+    flex-direction: column;
+    gap: 5px;
+}
+
+h1 {
+    font-weight: normal;
+    font-size: 24px;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+    margin-bottom: 60px;
+}
+
+label {
+    color: rgba(255, 255, 255, 0.8);
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 2px;
+    padding-left: 10px;
+}
+
+input {
+    background: rgba(255, 255, 255, 0.3);
+    height: 40px;
+    line-height: 40px;
+    border-radius: 20px;
+    padding: 0px 20px;
+    border: none;
+    margin-bottom: 20px;
+    color: white;
+}
+
+button {
+    background: rgb(45, 126, 231);
+    height: 80px;
+    line-height: 40px;
+    border-radius: 40px;
+    border: none;
+    margin: 10px 0px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+@media (max-width: 900px) {
+    .nav-links {
+        display: none; /* Esconde os links */
+    }
+
+    .nav-toggle {
+        display: block; /* Exibe o botão de hambúrguer */
+    }
+
+    header {
+        grid-template-columns: 1fr; /* Um único bloco para melhor adaptação em telas menores */
+    }
+
+    header .content {
+        max-width: 100%; /* Garante que o conteúdo ocupe toda a largura disponível */
+        margin: 0;       /* Remove margens extras */
+    }
+
+    header .imagem img {
+        max-width: 100%; /* Faz a imagem ocupar 100% da largura disponível */
+    }
+
+    .preco {
+        grid-template-columns: repeat(2, 1fr); /* Ajusta para 2 colunas em telas médias */
+    }
+
+    footer {
+        grid-template-columns: 1fr 200px;
+    }
+}
+
+@media (max-width: 600px) {
+    header .image::before {
+        display: none; /* Remove o pseudo-elemento da imagem */
+    }
+
+    .preco {
+        grid-template-columns: 1fr; /* Para telas muito pequenas, exibir um único item por linha */
+        gap: 1rem; /* Reduz o gap para melhorar a estética */
+    }
+
+    footer {
+        grid-template-columns: 1fr 150px; /* Ajusta a largura do footer */
+    }
+
+    .btn {
+        width: 100%; /* Faz o botão ocupar toda a largura disponível em telas pequenas */
+        font-size: 1rem; /* Ajuste no tamanho do texto */
+    }
+
+    .cadastro {
+        width: 90%; /* Ajusta a largura do formulário em telas pequenas */
+        height: auto; /* Ajusta a altura para se ajustar ao conteúdo */
+    }
+}
